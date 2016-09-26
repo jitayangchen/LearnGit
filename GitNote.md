@@ -20,6 +20,7 @@
 ### 分支管理
 * 创建dev分支，然后切换到dev分支：`git checkout -b <name>`，命令加上-b参数表示创建并切换。
 * 也可以用这两个命令创建dev分支：`git branch <name>` -> `git checkout <name>`
+* `git checkout -b [分支名] [远程名]/[分支名]`还可以用 --track 选项简化`git checkout --track origin/serverfix`
 * 查看分支：`git branch`
 * 切换分支：`git checkout <name>`
 * 合并某分支到当前分支：`git merge <name>`
