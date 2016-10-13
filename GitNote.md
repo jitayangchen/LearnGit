@@ -12,6 +12,7 @@
 * 使用pull 例：`git pull <远程主机名> <远程分支名>:<本地分支名>` 例：`git pull upstream master:master`
 * 使用fetch 然后merge：`git fetch upstream` -> `git merge upstream/master` or `git rebase upstream/master`
 * 使用remote update：`git remote update` -> `git merge upstream/master` or `git rebase upstream/master`
+* 在任何时候，你可以用--abort参数来终止rebase的行动，并且"mywork" 分支会回到rebase开始前的状态: `git rebase --abort`
 
 ### 更新到自己远程仓库(origin)
 * `git push origin master`
@@ -41,6 +42,8 @@
 * 根据commit id回退版本：`git reset --hard <commit id>`
 
 ### 撤销修改
+> [https://git-scm.com/book/zh/v1/Git-基础-撤消操作#取消已经暂存的文件](https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C#取消已经暂存的文件)
+
 * 工作区的修改全部撤销：`git checkout -- <file>`
 * 暂存区的修改全部撤销：`git reset HEAD <file>`
 
@@ -48,4 +51,8 @@
 * 删除文件后：`git add/rm <file>` 然后提交：`git commit`
 * 恢复误删的文件：`git checkout -- <file>`
 
+### 储藏（Stashing）
+* 储藏： `git stash`
+* 查看储藏： `git stash list`
+* 恢复的同时把stash内容删除： `git stash pop`
 ### 冲突处理
