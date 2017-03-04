@@ -15,6 +15,7 @@
 
 ### 更新upstream到本地
 * 使用pull 例：`git pull <远程主机名> <远程分支名>:<本地分支名>` 例：`git pull upstream master:master`
+* 如果合并需要采用rebase模式，可以使用–-rebase选项：`git pull --rebase <远程主机名> <远程分支名>:<本地分支名>`
 * 使用fetch 然后merge：`git fetch upstream` -> `git merge upstream/master` or `git rebase upstream/master`
 * 使用remote update：`git remote update` -> `git merge upstream/master` or `git rebase upstream/master`
 * 在任何时候，你可以用--abort参数来终止rebase的行动，并且"mywork" 分支会回到rebase开始前的状态: `git rebase --abort`
