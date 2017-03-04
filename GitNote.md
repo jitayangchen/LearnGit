@@ -29,7 +29,8 @@
 * 也可以用这两个命令创建dev分支：`git branch <name>` -> `git checkout <name>`
 * `git checkout -b [分支名] [远程名]/[分支名]`
 * 查看分支：`git branch`
-* 查看远程分支：`git branch -a`
+* 查看远程分支：`git branch -r`
+* 查看所有分支：`git branch -a`
 * 切换分支：`git checkout <name>`
 * 切换远程分支：`git checkout --track origin/serverfix`
 * 合并某分支到当前分支：`git merge <name>`
@@ -63,4 +64,5 @@
 * 储藏： `git stash`
 * 查看储藏： `git stash list`
 * 恢复的同时把stash内容删除： `git stash pop`
+
 ### 冲突处理
