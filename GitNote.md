@@ -3,6 +3,7 @@
 ### 提交到版本库
 * `git add .` -> `git commit -m "msg"`
 * `git commit -a -m "msg"`
+* 重新提交并修改最后一次提交信息：`git commit --amend -m "msg"`
 
 ### 添加远程库
 * 查看远程库：`git remote -v`
