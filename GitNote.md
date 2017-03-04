@@ -8,6 +8,10 @@
 * 查看远程库：`git remote -v`
 * 添加远程库：`git remote add upstream <url>`
 
+### 修改远程库
+* 修改远程库URL：`git remote set-url origin <url>`
+* 删除远程库：`git remote rm origin`
+
 ### 更新upstream到本地
 * 使用pull 例：`git pull <远程主机名> <远程分支名>:<本地分支名>` 例：`git pull upstream master:master`
 * 使用fetch 然后merge：`git fetch upstream` -> `git merge upstream/master` or `git rebase upstream/master`
@@ -23,6 +27,7 @@
 * 也可以用这两个命令创建dev分支：`git branch <name>` -> `git checkout <name>`
 * `git checkout -b [分支名] [远程名]/[分支名]`
 * 查看分支：`git branch`
+* 查看远程分支：`git branch -a`
 * 切换分支：`git checkout <name>`
 * 切换远程分支：`git checkout --track origin/serverfix`
 * 合并某分支到当前分支：`git merge <name>`
@@ -40,6 +45,7 @@
 * 显示版本号：`git log` `git reflog`
 * 回退到上个版本：`git reset --hard HEAD^`
 * 根据commit id回退版本：`git reset --hard <commit id>`
+* 回退单个文件：`git checkout <commit id> <file>`
 
 ### 撤销修改
 > [https://git-scm.com/book/zh/v1/Git-基础-撤消操作#取消已经暂存的文件](https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C#取消已经暂存的文件)
