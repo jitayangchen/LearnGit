@@ -38,6 +38,7 @@
 * 创建一个追踪分支：`git branch --track <分支名> <远程主机名>/<分支名>`
 * 合并某分支到当前分支：`git merge <分支名>`
 * 删除分支：`git branch -d <分支名>`
+* 删除远程分支：`git push <远程主机名> :<远程分支名>`
 
 ### Tag
 * 添加Tag：`git tag <tag name>`
