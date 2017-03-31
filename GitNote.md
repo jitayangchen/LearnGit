@@ -57,6 +57,7 @@
 * 单选简短Log：`git log --pretty=oneline --abbrev-commit`
 * 图形化表示：`--graph` 例：`git log --pretty=oneline --graph --abbrev-commit`
 * 记录每一次命令：`git reflog`
+* 查看操作时间：`git reflog show --date=iso <branch name>`
 
 ### 版本回退
 * 显示版本号：`git log` `git reflog`
@@ -83,7 +84,7 @@
 ### Git config
 * 查看当前用户（global）配置：`git config --global  --list`
 * 查看当前仓库配置信息：`git config --local  --list`
-* git config --global user.name "YOUR NAME"
-* git config --global user.email "EMAIL ADDRESS"
+* `git config --global user.name "YOUR NAME"`
+* `git config --global user.email "EMAIL ADDRESS"`
 * Generating a new SSH key：`ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 * Test SSH connection：`ssh -T git@github.com`
