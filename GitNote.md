@@ -74,6 +74,7 @@
 * 储藏： `git stash`
 * 查看储藏： `git stash list`
 * 恢复的同时把stash内容删除： `git stash pop`
+* 清空Stash：`git stash clear`
 
 ### Git config
 * 查看当前用户（global）配置：`git config --global  --list`
