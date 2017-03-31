@@ -43,6 +43,9 @@
 * 添加Tag：`git tag <tag name>`
 * 添加Tag指定commit id：`git tag <tag name> <commit id>`
 * 添加带有说明的标签，用-a指定标签名，-m指定说明文字：`git tag -a <tag name> -m <msg> <commit id>`
+* 删除tag：`git tag -d <tag name>`
+* 推送到远程：`git push <远程主机名> <tag name>`
+* 推送全部尚未推送到远程的本地标签：`git push <远程主机名> --tags`
 * 查看Tag：`git tag`
 * 查看Tag信息：`git show <tag name>`
 
