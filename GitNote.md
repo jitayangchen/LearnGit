@@ -56,6 +56,7 @@
 * 单行显示Log：`git log --pretty=oneline`
 * 单选简短Log：`git log --pretty=oneline --abbrev-commit`
 * 图形化表示：`--graph` 例：`git log --pretty=oneline --graph --abbrev-commit`
+* 记录每一次命令：`git reflog`
 
 ### 版本回退
 * 显示版本号：`git log` `git reflog`
