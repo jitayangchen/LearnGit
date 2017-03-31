@@ -25,16 +25,18 @@
 * 第一次和远程库关联：`git push -u origin master`，由于远程库是空的，在第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
 
 ### 分支管理
-* 创建dev分支，然后切换到dev分支：`git checkout -b <name>`，命令加上-b参数表示创建并切换。
-* 也可以用这两个命令创建dev分支：`git branch <name>` -> `git checkout <name>`
-* `git checkout -b [分支名] [远程名]/[分支名]`
+* 创建dev分支，然后切换到dev分支：`git checkout -b <branch name>`，命令加上-b参数表示创建并切换。
+* 也可以用这两个命令创建dev分支：`git branch <branch name>` -> `git checkout <branch name>`
+* `git checkout -b [branch name] [host]/[branch name]`
 * 查看分支：`git branch`
 * 查看远程分支：`git branch -r`
 * 查看所有分支：`git branch -a`
-* 切换分支：`git checkout <name>`
+* 查看分支追踪：`git branch -vv`
+* 切换分支：`git checkout <branch name>`
 * 切换远程分支：`git checkout --track origin/serverfix`
-* 合并某分支到当前分支：`git merge <name>`
-* 删除分支：`git branch -d <name>`
+* 创建一个追踪分支：`git branch --track <branch name> <host>/<branch name>`
+* 合并某分支到当前分支：`git merge <branch name>`
+* 删除分支：`git branch -d <branch name>`
 
 ### Log
 > [https://git-scm.com/book/zh/v1/Git-基础-查看提交历史](https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2)
