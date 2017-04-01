@@ -3,6 +3,7 @@
 ### 提交到版本库
 * `git add .` -> `git commit -m "msg"`
 * `git commit -a -m "msg"`
+* 追加文件，重新提交：`git commit --amend`
 * 重新提交并修改最后一次提交信息：`git commit --amend -m "msg"`
 
 ### 添加远程库
@@ -35,7 +36,7 @@
 * 查看分支追踪：`git branch -vv`
 * 切换分支：`git checkout <分支名>`
 * 切换远程分支：`git checkout --track <远程主机名>/<分支名>`
-* 创建一个追踪分支：`git branch --track <分支名> <远程主机名>/<分支名>`
+* 创建一个追踪分支：`git checkout -b <分支名> --track <远程主机名>/<分支名>`
 * 合并某分支到当前分支：`git merge <分支名>`
 * 删除分支：`git branch -d <分支名>`
 * 删除远程分支：`git push <远程主机名> :<远程分支名>`
@@ -69,7 +70,8 @@
 ### 撤销修改
 > [https://git-scm.com/book/zh/v1/Git-基础-撤消操作#取消已经暂存的文件](https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C#取消已经暂存的文件)
 
-* 工作区的修改全部撤销：`git checkout -- <file>`
+* 工作区的修改撤销文件：`git checkout -- <file>`
+* 工作区的修改全部撤销：`git checkout -- .`
 * 暂存区的修改全部撤销：`git reset HEAD <file>`
 
 ### 删除文件
