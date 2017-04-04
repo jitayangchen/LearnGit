@@ -32,5 +32,11 @@
 * 分屏：`:split(sp)` ` :vsplit(vs)`
 
 * shift + 3 高亮（取消用 :nohlsearch (noh)）
-
-
+* Ctrl + e 向下滚动一行
+* Ctrl + y 向上滚动一行
+* Ctrl + d 向下滚动半屏
+* Ctrl + u 向上滚动半屏
+* Ctrl + f 向下滚动一屏
+* Ctrl + b 向上滚动一屏 
+* S s 
+* zt/zz/zb : 当前行移到屏幕的首/中/底部
