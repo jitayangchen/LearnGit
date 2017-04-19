@@ -5,6 +5,7 @@
 * fa → 到下一个为a的字符处，你也可以fs到下一个为s的字符。
 * ta
 * :set number 显示行号
+* :set nonu 不显示行号
 * gg：光标移动到文档第一行
 * G：逃票移动到文档最后一行
 * /word：搜索字符
@@ -23,6 +24,8 @@
 * diw\daw 删除一个单词
 * dw\de
 * caw 删除一个单词 并 进入插入模式
+* di" 删除双引号内的内容
+* da" 删除双引号及其内容
 * [在 Vim 中优雅地查找和替换](http://harttle.com/2016/08/08/vim-search-in-file.html)
 
 * :Ex 浏览目录
