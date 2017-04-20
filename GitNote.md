@@ -55,12 +55,15 @@
 ### Log
 > [https://git-scm.com/book/zh/v1/Git-基础-查看提交历史](https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2)
 
-* Log：`git log`
+* Log：`git log <file name>`
 * 单行显示Log：`git log --pretty=oneline`
 * 单选简短Log：`git log --pretty=oneline --abbrev-commit`
 * 图形化表示：`--graph` 例：`git log --pretty=oneline --graph --abbrev-commit`
 * 记录每一次命令：`git reflog`
 * 查看操作时间：`git reflog show --date=iso <branch name>`
+* 显示每次提交的内容差异，用 -2 则仅显示最近的两次更新：`git log -p -2`
+* `git diff`
+* `git show`
 
 ### 版本回退
 * 显示版本号：`git log` `git reflog`
