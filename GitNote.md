@@ -92,6 +92,8 @@
 ### 储藏（Stashing）
 * 储藏： `git stash`
 * 查看储藏： `git stash list`
+* 储藏的工作重新应用：`git stash apply <stash@{2}>`
+* 移除储藏：`git stash drop stash@{0}`
 * 恢复的同时把stash内容删除： `git stash pop`
 * 清空Stash：`git stash clear`
 
