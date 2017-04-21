@@ -104,3 +104,6 @@
 * `git config --global user.email "EMAIL ADDRESS"`
 * Generating a new SSH key：`ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 * Test SSH connection：`ssh -T git@github.com`
+
+### Other
+* 二分法查找bug：`git bisect start` `git bisect good`
