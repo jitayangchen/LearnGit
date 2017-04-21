@@ -4,7 +4,7 @@
 * `git add .` -> `git commit -m "msg"`
 * `git commit -a -m "msg"`
 * 追加文件，重新提交：`git commit --amend`
-* 重新提交并修改最后一次提交信息：`git commit --amend -m "msg"`
+* 重新提交并修改最后一次提交信息：`git commit --amend -m "msg"` 然后：`git push <remote> <branch> --force`
 
 ### 添加远程库
 * 查看远程库：`git remote -v`
@@ -41,6 +41,7 @@
 * 先`rebase`，如果有冲突，`git rebase --abort`，再换用`merge`
 * 删除分支：`git branch -d <分支名>`
 * 删除远程分支：`git push <远程主机名> :<远程分支名>`
+* 删除远程分支：`git push origin --delete <branch name>`
 
 ### Tag
 * 添加Tag：`git tag <tag name>`
@@ -62,14 +63,20 @@
 * 记录每一次命令：`git reflog`
 * 查看操作时间：`git reflog show --date=iso <branch name>`
 * 显示每次提交的内容差异，用 -2 则仅显示最近的两次更新：`git log -p -2`
-* `git diff`
-* `git show`
+* `git diff`：显示暂存区和工作区的差异
+* `git diff --cached [file]`：显示暂存区和上一个commit的差异
+* `git diff HEAD`：显示工作区与当前分支最新commit之间的差异
+* `git diff <commit id> <commit id>`：显示两次提交之间的差异
+* `git show <commit id>`：显示某次提交的元数据和内容变化
+* `git show --name-only <commit id>`：显示某次提交发生变化的文件
+* `git show <commit id>:<file name>`：显示某次提交时，某个文件的内容
+* `git blame <file name>`：显示指定文件是什么人在什么时间修改过
 
 ### 版本回退
 * 显示版本号：`git log` `git reflog`
 * 回退到上个版本：`git reset --hard HEAD^`
 * 根据commit id回退版本：`git reset --hard <commit id>`
-* 回退单个文件：`git checkout <commit id> <file>`
+* 回退单个文件：`git checkout <commit id> -- <file>`
 
 ### 撤销修改
 > [https://git-scm.com/book/zh/v1/Git-基础-撤消操作#取消已经暂存的文件](https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C#取消已经暂存的文件)
