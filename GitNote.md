@@ -18,6 +18,7 @@
 * 使用pull 例：`git pull <远程主机名> <远程分支名>:<本地分支名>` 例：`git pull upstream master:master`
 * 如果合并需要采用rebase模式，可以使用–-rebase选项：`git pull --rebase <远程主机名> <远程分支名>:<本地分支名>`
 * 使用fetch 然后merge：`git fetch <远程主机名> <分支名>` -> `git merge <远程主机名>/<分支名>` or `git rebase <远程主机名>/<分支名>`
+* 同步删除远程分支：`git -c core.quotepath=false fetch upstream --progress --prune`
 * 使用remote update：`git remote update` -> `git merge <远程主机名>/<分支名>` or `git rebase <远程主机名>/<分支名>`
 * 在任何时候，你可以用--abort参数来终止rebase的行动，并且"mywork" 分支会回到rebase开始前的状态: `git rebase --abort`
 
@@ -92,6 +93,7 @@
 ### 储藏（Stashing）
 * 储藏： `git stash`
 * 查看储藏： `git stash list`
+* 查看内容：`git stash show -p <stash id>`
 * 储藏的工作重新应用：`git stash apply <stash@{2}>`
 * 移除储藏：`git stash drop stash@{0}`
 * 恢复的同时把stash内容删除： `git stash pop`
