@@ -45,7 +45,7 @@
 * 删除远程分支：`git push origin --delete <branch name>`
 
 ### Tag
-* 添加Tag：`git tag <tag name>`
+* 添加轻量级的Tag：`git tag <tag name>`
 * 添加Tag指定commit id：`git tag <tag name> <commit id>`
 * 添加带有说明的标签，用-a指定标签名，-m指定说明文字：`git tag -a <tag name> -m <msg> <commit id>`
 * 删除tag：`git tag -d <tag name>`
