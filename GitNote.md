@@ -109,3 +109,4 @@
 
 ### Other
 * 二分法查找bug：`git bisect start` `git bisect good`
+* `git cherry-pick`: 选择某一个分支的一个或几个commit来进行操作
