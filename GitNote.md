@@ -43,6 +43,7 @@
 * 删除分支：`git branch -d <分支名>`
 * 删除远程分支：`git push <远程主机名> :<远程分支名>`
 * 删除远程分支：`git push origin --delete <branch name>`
+* 根据tag创建分支`git checkout -b <branch name> <tag name>`
 
 ### Tag
 * 添加轻量级的Tag：`git tag <tag name>`
